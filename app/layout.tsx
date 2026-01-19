@@ -4,7 +4,7 @@ import { Chewy, Fredoka } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const chewy = Chewy({ weight: ["400", "500", "600", "700"], subsets: ["latin"] })
+const chewy = Chewy({ weight: "400", subsets: ["latin"] })
 const fredoka = Fredoka({ weight: ["400", "500", "600", "700"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
