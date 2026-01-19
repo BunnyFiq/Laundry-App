@@ -1,11 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Chewy, Fredoka } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const chewy = Chewy({ weight: ["400", "500", "600", "700"], subsets: ["latin"] })
+const fredoka = Fredoka({ weight: ["400", "500", "600", "700"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Laundry Booking App",
@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${fredoka.className} antialiased`}>
         {children}
         <Analytics />
       </body>
